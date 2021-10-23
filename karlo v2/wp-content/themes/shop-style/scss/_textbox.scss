@@ -1,0 +1,73 @@
+.textbox-center{
+    .container{
+        background-color: $secondary;
+    }
+    img{
+        height: 130%;
+        bottom: 0;
+        object-fit: cover;
+    }
+    .line-svg2{
+        position: absolute;
+        bottom: -10%;
+        left: -10%;
+        width: 125%;
+        height: 150%;
+    }
+    .line-svg3{
+        position: absolute;
+        bottom: -10%;
+        left: -5%;
+        width: 110%;
+        height: 120%;
+    }
+}
+.f-18{
+    font-size: 18px;
+}
+.h-120{
+    height: 120%;
+}
+.svg-img-top{
+    top: -40px;
+    left: -20px;
+    width: 110%;
+    height: 120%;
+    z-index: 2;
+}
+.svg-img-bot{
+    top: -40px;
+    left: -20px;
+    width: 110%;
+    height: 120%;
+
+}
+.img-back{
+    &:after{
+        position: absolute;
+        bottom: -20%;
+        right: -30%;
+        content: "\a0";
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 100% solid; 
+        background-color: $secondary;
+        z-index: -1;
+    }
+}
+.img-back-2{
+    &:after{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -50%;
+        content: "\a0";
+        width: 100%;
+        height: 125%;
+        display: block;
+        border: 100% solid; 
+        background-color: $secondary;
+        z-index: -1;
+    }
+}

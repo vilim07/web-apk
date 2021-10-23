@@ -1,0 +1,240 @@
+html{
+  scroll-behavior: smooth;
+    body{
+      background-color: #FFFDFA;
+        a, p, h1, h2, h3, h4, h5{
+            color: $primary-font-color;
+            margin: 0;
+        }
+        .open-sans{
+            font-family: $secondary-font;
+          }
+      a{
+        font-family: $primary-font;
+      }
+      h1, h2, h3, h4, h5{
+        font-family: $primary-font;
+      }
+      h1{
+        line-height: 90px !important;
+        @media only screen and (max-width: 460px) {
+          line-height: 5rem !important;
+      }
+      }
+      h5{
+        line-height: 34px;
+      }
+      p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+      }
+      .bg-primary-color{
+        background-color: $primary-font-color;
+      }
+      input, textarea{
+        font-family: $primary-font;
+        font-size: 16px;
+        font-weight: bold;
+        color: #F9DBB9;
+        background-color: #424153;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        resize: none;
+        &::placeholder{
+          color: #F9DBB9;
+        }
+      }
+      textarea{
+        height: 210px;
+      }
+    
+      button{
+        p{
+          font-size: 16px;
+          font-weight: bold;
+          font-family: $primary-font;
+        }
+      }
+    }
+    a:hover{
+      color: $primary-font-color;
+      text-decoration: none;
+    }
+    ul{
+      padding: 0;
+    }
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  h1{
+    font-size: 80px;
+    @media only screen and (max-width: 460px) {
+        font-size: 56px !important;
+    }
+  }
+  h2{
+    font-size: 48px;
+    @media only screen and (max-width: 920px) {
+      font-size: 36px !important;
+  }
+  }
+  h3{
+    font-size: 30px;
+    @media only screen and (max-width: 920px) {
+      font-size: 26px !important;
+  }
+  }
+  h4{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  h5{
+    font-size: 18px;
+    @media only screen and (min-width: 720px) {
+      
+      font-size: 20px;
+    }
+    
+   
+  }
+  .spec-font{
+    font-size: 26px;
+    font-weight: 900;
+    @media only screen and (max-width: 1200px) {
+      font-size: 18px !important;
+  }
+  }
+  .vh-50{
+    height: 50vh;
+  }
+.price-text{
+  font-size: 70px;
+}
+.font-weight-semi-bold{
+  font-weight: 500;
+}
+.fc{
+  width: fit-content;
+}
+.border-sep-bot{
+  border-top: 1px solid #897B78;
+
+}
+#myCategorySelector{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+
+}
+.image-contain{
+  object-fit: contain;
+}
+#menu-menu-4 {
+  text-align: center;
+  font-size: 20px;
+  li{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .card-row{
+    margin-left:0;
+  }
+  
+}
+@media only screen and (min-width: 720px) {
+    .h-md-auto{
+      height: auto !important;
+    }
+    .w-md-auto{
+      width: auto !important;
+    }
+    .border-sep{
+      border-right: 1px solid #897B78;
+      border-top: none;
+    }
+    .border-sep-bot{
+      border-top: none;
+      padding: none;
+    
+    }
+  }
+.pb-1-5{
+  padding-bottom: 1.5rem;
+}
+.card{
+  background-color: #FFFDFA;
+}
+.bordere{
+  border-bottom: $secondary 1px solid;
+}
+.font-weight-bolder{
+  font-weight: 900 !important;
+}
+.hr-top:before{
+  position: absolute;
+  left: -40px;
+  top: 64%;
+  content: "\00a0";
+  width: 75%;
+  border-top: 1px solid $secondary;
+  @media only screen and (max-width: 992px) {
+    width: 40%;
+    top: 72%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 62%;
+    top: unset;
+    margin-top: -15px;
+  }
+
+}
+.modal{
+  overflow: scroll;
+}
+.modal-dialog-centered{
+  align-items: unset !important;
+  height: fit-content;
+}
+.border-circle{
+  position: absolute;
+  transform-origin: right;
+  background-color: $secondary;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.saturation{
+  filter: saturate(1.8);
+}
+article .slick-slide{
+  align-items: baseline !important;
+}
+.overflow-h{
+  @media only screen and (max-width: 992px) {
+    overflow: hidden;
+  }
+}

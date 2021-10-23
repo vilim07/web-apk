@@ -1,0 +1,51 @@
+.mr-fix{
+    margin-right: 10px;
+}
+.myPixHeight{
+    .slick-list{
+        height: 100%;
+        .slick-track{
+            height: 100%;
+        }
+        .slick-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+}
+.h125{
+    object-fit: cover;
+    height: 150px;
+    width: 150px !important;
+    @media only screen and (max-width: 920px) {
+        height: 75px;
+        width: 75px !important;
+    }
+}
+.gallery-showcase{
+    .slick-track{width: 100%;}
+    .slick-slider {
+        margin:0 -15px;
+    }
+    .slick-list{
+        padding-left: 0 !important;
+    }
+
+    .slick-slide {
+        padding:10px;
+        text-align:center;
+        margin-right:15px;
+        margin-left:15px;
+    }
+    @media only screen and (min-width: 720px) {
+      
+        .slick-slide {
+            padding-right:10px;
+            text-align:center;
+            margin-right:0px;
+            margin-left:0px;
+        }
+      }
+}

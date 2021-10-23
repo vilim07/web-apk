@@ -1,0 +1,40 @@
+.button{
+    padding: 24px 50px;
+    border: 1px $primary-font-color solid;
+    border-radius: 60px;
+    background-color: white;
+    width: fit-content;
+    transition: 0.2s ease-out;
+    justify-content: center;
+    display: flex;
+    p{
+        margin: 0;
+        width: fit-content;
+        box-shadow: inset 0px -12px 0px 0px $secondary;
+    }
+    &:hover{
+        box-shadow:5px 10px 32px 10px rgba(0, 0, 0, 0.07);
+    }
+}
+
+.button2{
+    padding: 24px 50px;
+    border: 1px $primary-font-color solid;
+    border-radius: 60px;
+    background-color: #3C3B4B;
+    width: fit-content;
+    transition: 0.2s ease-out;
+    border: 1px solid #F9DBB9;
+
+    p{
+        margin: 0;
+        @media only screen and (min-width: 720px) {
+            box-shadow: inset 0px -12px 0px 0px #525164;
+          }
+        
+        color: #F9DBB9;
+    }
+    &:hover{
+        box-shadow:5px 10px 20px 5px rgba(0, 0, 0, 0.26);
+    }
+}

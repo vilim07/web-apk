@@ -1,0 +1,113 @@
+.card{
+    overflow: hidden;
+    .button p {
+        margin: 0;
+        box-shadow: inset 0 -12px 0 0 #ffffff !important;
+    }
+    h4{
+        @media only screen and (max-width: 1200px) {
+            line-height: 20px;
+        }
+    }
+    a:focus{
+        outline: none;
+    }
+    border-radius: 0;
+    border: none;
+    &-img-top{
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        border-radius: 0;
+    }
+    &-body, &-footer{
+        background-color: $secondary; 
+        z-index: 2;
+        @media only screen and (max-width: 1200px) {
+        }
+    }
+    &-body{
+        height: 168px;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media only screen and (max-width: 1200px) {
+            height: 126px;
+        }
+        justify-content: space-around;
+        display: flex;
+        flex-flow: column;
+        background-color: $secondary;
+    }
+    &-footer{
+        height: 69px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        @media only screen and (max-width: 1200px) {
+            h4{
+                font-size: 20px !important;
+            }        }
+    }
+    &-row{
+        padding-left: -15px;
+        padding-right: -15px;
+    }
+    @media only screen and (max-width: 1200px) {
+        h4{
+            font-size: 14px;
+        }
+    }
+
+}
+.filterDiv{
+    animation-name: animateGo;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+    opacity: 0;
+    display: none;
+}
+.show{
+    animation-name: animateGo;
+    animation-duration: 2s;
+    opacity: 1;
+    display: flex !important;
+}
+@keyframes animateGo {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+ #myCategorySelector{
+    h5{
+        font-size: 1rem;
+    }
+     .active{
+        h5{
+            text-shadow: 0 0 0.2px black;
+         }
+         
+     }
+ }
+ .card-hover{
+    position: absolute;
+    width: calc(100% - 30px);
+    top: 58%;
+    transition: 0.3s;
+    background-color: hsla(30, 50%, 90%, 0.4);
+    aspect-ratio: 1/1;
+    // height: calc(200px - 2rem);
+     @media only screen and (max-width: 1200px) {
+         display: none;
+    }
+    @media only screen and (max-width: 720px) {
+        
+    } 
+    button{
+        background-color: transparent;
+    }
+}
+.card:hover{
+    .card-hover{
+        bottom: unset;
+        top: calc(0 + 2rem);
+
+    }
+}
